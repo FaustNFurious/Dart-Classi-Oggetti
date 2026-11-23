@@ -1,14 +1,12 @@
 //import 'package:classi_oggetti/classi_oggetti.dart' as classi_oggetti;
-import 'package:classi_oggetti/person.dart';
-
-
+import 'package:classi_oggetti/auto.dart';
 
 void main(List<String> arguments) {
-  //print('Hello world: ${classi_oggetti.calculate()}!');
+  Auto primaAuto = Auto('Toyota', 'Corolla', 2023);
+  Auto secondaAuto = Auto('Volkswagen', 'Maggiolino', 1967);
 
-  Person laraCorft = Person('Lara Croft', 30);
-  print(laraCorft.name);
-  print(laraCorft.age);
-  print(laraCorft.greet());
-
+  print(primaAuto.toString());
+  print(primaAuto.isVintage());
+  print(secondaAuto.toString());
+  print(secondaAuto.isVintage());
 }
